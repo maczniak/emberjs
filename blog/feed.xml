@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ember Blog</title>
+  <subtitle>Ember News and Updates</subtitle>
+  <id>http://emberjs.com/blog</id>
+  <link href="http://emberjs.com/blog"/>
+  <link href="http://emberjs.com/blog/feed.xml" rel="self"/>
+  <updated>2013-12-22T00:00:00Z</updated>
+  <author>
+    <name>Ember</name>
+  </author>
+  <entry>
+    <title>Core Team Meeting Minutes - 2013/12/20</title>
+    <link rel="alternate" href="http://emberjs.com/blog/2013/12/22/core-team-meeting-minutes-2013-12-20.html"/>
+    <id>http://emberjs.com/blog/2013/12/22/core-team-meeting-minutes-2013-12-20.html</id>
+    <published>2013-12-22T00:00:00Z</published>
+    <updated>2013-12-22T00:00:00Z</updated>
+    <author>
+      <name>Ember</name>
+    </author>
+    <summary type="html">&lt;p&gt;Although most of our collaboration takes place on Github, IRC 
+(&lt;code&gt;#emberjs&lt;/code&gt; on freenode.net), and our &lt;a href="http://discuss.emberjs.com/"&gt;Discourse site&lt;/a&gt;
+the &lt;a href="/team"&gt;Ember.js Core Team&lt;/a&gt; meets privately every 
+Friday at 2pm EST/11am PST through Google Hangout for a weekly 
+discussion of all things...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Although most of our collaboration takes place on Github, IRC 
+(&lt;code&gt;#emberjs&lt;/code&gt; on freenode.net), and our &lt;a href="http://discuss.emberjs.com/"&gt;Discourse site&lt;/a&gt;
+the &lt;a href="/team"&gt;Ember.js Core Team&lt;/a&gt; meets privately every 
+Friday at 2pm EST/11am PST through Google Hangout for a weekly 
+discussion of all things Ember.&lt;/p&gt;
+
+&lt;p&gt;If you have a topic you&amp;#39;d like to see covered, contact your favorite
+core team member and let them know!&lt;/p&gt;
+&lt;h4 class='anchorable-toc' id='toc_attendees'&gt;Attendees&lt;/h4&gt;
+&lt;p&gt;@krisselden, @machty, @stefanpenner, @tomdale, @trek, @wagenet, @wycats&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_topics'&gt;Topics&lt;/h3&gt;&lt;h4 class='anchorable-toc' id='toc_build-tools'&gt;Build Tools&lt;/h4&gt;
+&lt;p&gt;@wycats has been communicating with @jo_liss about using 
+&lt;a href="https://github.com/joliss/broccoli/"&gt;broccoli&lt;/a&gt; as the basis for a build tools package.&lt;/p&gt;
+&lt;h4 class='anchorable-toc' id='toc_ember-data'&gt;Ember Data&lt;/h4&gt;
+&lt;p&gt;Ember data is now less of an ORM and more of a pluggable framework for assembling
+your own data communication layer for Ember.js applications (with some nice defaults for
+people&amp;#39;s whose APIs follow common patterns). However, the interface – especially on the 
+&amp;quot;normal form&amp;quot; of return values – isn&amp;#39;t well documented so people aren&amp;#39;t able to easily jump in, 
+try it, and offer feedback.&lt;/p&gt;
+
+&lt;p&gt;Resolutions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@trek will start working on docs.&lt;/li&gt;
+&lt;li&gt;@tomdale, @wycats will publish an ember data update blog post.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 class='anchorable-toc' id='toc_query-params'&gt;Query Params&lt;/h4&gt;
+&lt;p&gt;Some debate about the correct location for defining and handling query parameters
+(controller vs route).&lt;/p&gt;
+
+&lt;p&gt;Resolutions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a smaller group will handle that discussion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 class='anchorable-toc' id='toc_pods'&gt;Pods&lt;/h4&gt;
+&lt;p&gt;During the face-to-face we floated the idea of organizing an application&amp;#39;s files in a
+&lt;a href="/blog/2013/12/17/whats-coming-in-ember-in-2014.html#toc_pod-directory-structure"&gt;&amp;quot;pod&amp;quot; structure&lt;/a&gt;. 
+Feedback has been positive, but we want to get more real world stories about the pros and cons of
+this structure.&lt;/p&gt;
+
+&lt;p&gt;Resolutions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@trek will reach out to people said they&amp;#39;ve built in this style.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What's Coming in Ember in 2014</title>
+    <link rel="alternate" href="http://emberjs.com/blog/2013/12/17/whats-coming-in-ember-in-2014.html"/>
+    <id>http://emberjs.com/blog/2013/12/17/whats-coming-in-ember-in-2014.html</id>
+    <published>2013-12-17T00:00:00Z</published>
+    <updated>2013-12-17T00:00:00Z</updated>
+    <author>
+      <name>Ember</name>
+    </author>
+    <summary type="html">&lt;p&gt;Every few months, the Ember core team likes to get together to discuss
+issues face-to-face and set our priorities for the following quarter.&lt;/p&gt;
+
+&lt;p&gt;This time, we all converged on Portland, Oregon for the weekend to
+figure out where to focus our energy in...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Every few months, the Ember core team likes to get together to discuss
+issues face-to-face and set our priorities for the following quarter.&lt;/p&gt;
+
+&lt;p&gt;This time, we all converged on Portland, Oregon for the weekend to
+figure out where to focus our energy in 2014.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_build-tools-modules'&gt;Build Tools &amp;amp; Modules&lt;/h2&gt;
+&lt;p&gt;We spent the majority of our time discussing a unified plan that
+combines ES6 modules with fast, robust, full-featured build tools for
+Ember developers.&lt;/p&gt;
+
+&lt;p&gt;One thing I love about the Ember community is that it values quality
+over raw implementation speed. For us, it&amp;#39;s more important &lt;a href="http://merrickchristensen.com/articles/scenario-vs-problem-solving.html"&gt;to solve
+problems than to solve
+scenarios&lt;/a&gt;,
+because scenario solving leads to fragmented solutions that don&amp;#39;t scale
+or compose as your app grows.&lt;/p&gt;
+
+&lt;p&gt;So far, we&amp;#39;ve held off on endorsing any particular build tool because,
+while we&amp;#39;ve investigated all of them thoroughly, the currently-available
+options all have fatal flaws that make them unpleasant to use as your
+app gets larger.&lt;/p&gt;
+
+&lt;p&gt;Many people have also been asking us about modules. When we started
+Ember, there were no popular module formats. Since then, both CommonJS
+modules on the server and AMD modules in the browser have exploded in
+popularity. While both are great options, their ecosystems are
+disconnected and the two communities frequently engage in emacs/vi-style
+holy wars.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, TC39, the committee in charge of maintaining JavaScript,
+recognized the need for a unified module system. ES6 modules offer the
+best of both AMD and CommonJS modules while being integrated directly
+into the language.&lt;/p&gt;
+
+&lt;p&gt;Just as the Ember community was one of the first to fully embrace
+JavaScript promises, we have spent the last few months working on making
+ES6 modules a reality and bringing them to production.&lt;/p&gt;
+
+&lt;p&gt;Two notable projects have come out of this work:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.thomasboyt.com/2013/06/21/es6-module-transpiler"&gt;ES6 Module Transpiler&lt;/a&gt;,
+which can transpile JavaScript written in the ES6 module syntax down
+into browser globals, AMD or CommonJS.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://embersherpa.com/articles/introduction-to-ember-app-kit/"&gt;Ember App Kit&lt;/a&gt;, a foundation
+for building Ember apps that uses ES6 modules (via the transpiler)
+instead of globals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;#39;s important to note that we have been planning for module support for
+some time. In fact, one of the last features that was blocking our
+initial 1.0 release was to have the entire framework go through an object
+called the &lt;em&gt;resolver&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The resolver is the part of our dependency injection system that is
+responsible for determining naming conventions. For example, imagine a
+user visits your Ember application at &lt;code&gt;/posts&lt;/code&gt;. By default, Ember will
+look for a template called &lt;code&gt;posts&lt;/code&gt;, ask the &lt;code&gt;App.PostsRoute&lt;/code&gt; for a
+model, and hook it all up to the &lt;code&gt;App.PostsController&lt;/code&gt;. But these
+globals are not hardcoded into the framework—instead, there&amp;#39;s a default
+resolver that encapsulates all of these naming conventions.&lt;/p&gt;
+
+&lt;p&gt;To write an Ember app that uses modules, it&amp;#39;s as simple as swapping out
+the default resolver for one that requires named modules instead of
+looking for globals.&lt;/p&gt;
+
+&lt;p&gt;In order to make it really nice, however, we believe we need
+command-line tools to smooth the process of creating, developing, and
+deploying apps.&lt;/p&gt;
+
+&lt;p&gt;Our focus for the first quarter of 2014 will be to develop first-class
+build tools that leverage existing tools where they fit our needs, and
+write new ones where the current options fall down. We&amp;#39;ll make modules a
+first-class citizen, and soon every developer who starts using Ember
+will also be using ES6 modules. We&amp;#39;re excited about a world where
+browser and server JavaScript packages live together in harmony.&lt;/p&gt;
+
+&lt;p&gt;To give you an idea of what we&amp;#39;re thinking, here are some example CLI
+commands and their effects. Note that this is all under heavy
+development and is subject to change.&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_initializing-an-app'&gt;Initializing an App&lt;/h3&gt;&lt;div class="highlight sh "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;ember new my-app
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This initializes a new Ember.js project and generates stub directories,
+an app, a router, etc.&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_starting-the-development-server'&gt;Starting the Development Server&lt;/h3&gt;&lt;div class="highlight sh "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;ember server
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;h3 class='anchorable-toc' id='toc_running-tests'&gt;Running Tests&lt;/h3&gt;&lt;div class="highlight sh "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;ember test
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Runs the QUnit tests using Karma (PhantomJS plus available
+browsers), although we are planning migrate to testem as we&amp;#39;ve found its
+output easier to work with.&lt;/p&gt;
+
+&lt;p&gt;You can also host the QUnit test harness for manual testing by
+running:&lt;/p&gt;
+&lt;div class="highlight sh "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;ember test:server
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;h2 class='anchorable-toc' id='toc_adding-packages'&gt;Adding Packages&lt;/h2&gt;
+&lt;p&gt;The Ember CLI supports bower natively. Just use the commands
+you&amp;#39;re used to:&lt;/p&gt;
+&lt;div class="highlight sh "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;bower install moment
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The lingua franca module format in Ember is ES6 modules. We will do the
+work to ensure that bower modules are usable by Ember apps
+automatically, by shimming AMD, CommonJS and browser global packages:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Provide a &lt;code&gt;shim.json&lt;/code&gt; and &lt;code&gt;shim&lt;/code&gt; directory for AMD shims&lt;/li&gt;
+&lt;li&gt;Name anonymous module based on filesystem location (including
+versions)&lt;/li&gt;
+&lt;li&gt;Concatenate modules into app.js (with source map)&lt;/li&gt;
+&lt;li&gt;Inherit source maps from bower (if provided)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Even if a library was shipped as AMD, you would be able to use it as
+though it was an ES6 module:&lt;/p&gt;
+&lt;div class="highlight js "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="reserved"&gt;import&lt;/span&gt; md from &lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;span class="content"&gt;markdown&lt;/span&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Every time a file changes, the final concatenated file loaded by the
+browser (app.js, app.css, etc.) is locked and any HTTP requests for it
+block until the new version is compiled.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_enhanced-inspector-features'&gt;Enhanced Inspector Features&lt;/h2&gt;
+&lt;p&gt;If you&amp;#39;re developing your app using the Ember CLI tools, the Chrome and
+Firefox inspectors get even better. The development server will open a
+socket that the inspector can connect to that will provide additional
+environmental information to the browser extension.&lt;/p&gt;
+
+&lt;p&gt;There are lots of exciting things you can do once your browser and
+development tools are talking to each other, but some of the ideas we&amp;#39;ve
+tossed around are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Seeing a list of installed bower packages&lt;/li&gt;
+&lt;li&gt;Seeing the results of test runs&lt;/li&gt;
+&lt;li&gt;Linting and auditing your codebase&lt;/li&gt;
+&lt;li&gt;Configuring package.json using visual editor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class='anchorable-toc' id='toc_filesystem-layout'&gt;Filesystem Layout&lt;/h2&gt;
+&lt;p&gt;Here is a rough example of the kind of layout you might see when
+initializing a new Ember app via the CLI:&lt;/p&gt;
+&lt;div class="highlight  "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;strong&gt;10&lt;/strong&gt;
+11
+12
+13
+14
+15
+16
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;app/
+  controllers/
+  models/
+  fonts/
+  …
+config/
+  shim.json
+vendor/
+  underscore.js    // bower installed
+  markdown.js
+lib/
+  ember-histogram/ // incubator for packages
+    skylight/
+    bower.json 
+modules/           // non-MVC stuff
+  underscore.js
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;h3 class='anchorable-toc' id='toc_pod-directory-structure'&gt;&amp;quot;Pod&amp;quot; Directory Structure&lt;/h3&gt;
+&lt;p&gt;Right now, many Ember projects have adopted a Rails-style directory
+layout where everything is grouped by type:&lt;/p&gt;
+&lt;div class="highlight  "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;strong&gt;10&lt;/strong&gt;
+11
+12
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;app/
+  controllers/
+    post.js
+    posts.js
+    index.js
+  models/
+    post.js
+    user.js
+  templates/
+    post.handlebars
+    posts.handlebars
+    index.handlebars
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We discussed moving this to a layout where related features are
+grouped together in &amp;quot;pods&amp;quot; of functionality:&lt;/p&gt;
+&lt;div class="highlight  "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;strong&gt;10&lt;/strong&gt;
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;strong&gt;20&lt;/strong&gt;
+21
+22
+23
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;app/
+  config/
+    application.js
+  serializers/
+  models/
+    post.js
+    user.js
+  mixins/
+pods/
+  post/
+    controller.js
+    template.handlebars
+  posts/
+    controller.js
+    template.handlebars
+  index/
+    controller.js
+    template.handlebars
+components/
+  google-map/
+    component.handlebars
+    component.js
+    component.css
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This proposed directory structure is still up for lots of discussion.
+We&amp;#39;ve been looking at many different real world apps to see if this
+makes managing the source code for Ember apps any easier.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_slimming-down-ember-js-project-svelte'&gt;Slimming Down Ember.js (Project Svelte)&lt;/h2&gt;
+&lt;p&gt;We believe there are several areas in the Ember codebase that have the
+potential to be slimmed down substantially. We&amp;#39;d like to pick a target
+filesize and have a sprint to get the total built framework size under
+that target.&lt;/p&gt;
+
+&lt;p&gt;We haven&amp;#39;t picked a target size yet, but we tossed around the 50k figure.
+We&amp;#39;ll have more information about this once we&amp;#39;ve made a list of good
+candidates for slimming action.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_distributing-components'&gt;Distributing Components&lt;/h2&gt;
+&lt;p&gt;There are a number of open issues around distributing reusable,
+third-party components and libraries of components. Typically we defer
+to the Web Components spec, but there are areas where the spec does not
+currently provide any guidance. As we deal with them, we are keen to
+provide feedback to the Web Components spec authors with how we have
+chosen to solve the problems.&lt;/p&gt;
+
+&lt;p&gt;Other limitations are due to certain features not being available in
+older browsers, and we are working on polyfilling and working around
+those issues so that you can enjoy the power of Web Components today in
+browsers all the way back to IE8.&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_namespacing'&gt;Namespacing&lt;/h3&gt;
+&lt;p&gt;Right now, Ember components share a global namespace. If I have a
+component called &lt;code&gt;area-graph&lt;/code&gt; and you have a component called
+&lt;code&gt;area-graph&lt;/code&gt; and I want to use your component in my app, we will have a
+collision.&lt;/p&gt;
+
+&lt;p&gt;Soon, components in packages will be addressable by a fully-qualified path.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s a notional area graph component:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{&lt;/span&gt;&lt;span class="attribute-name"&gt;area-graph&lt;/span&gt;&lt;span class="error"&gt;@&lt;/span&gt;&lt;span class="attribute-name"&gt;d3&lt;/span&gt; &lt;span class="attribute-name"&gt;xValue&lt;/span&gt;=&lt;span class="attribute-value"&gt;responseTimes&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you find yourself typing the fully-qualified path often, you will be
+able to alias the helper in the lexical scope of the Handlebars template:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{&lt;/span&gt;&lt;span class="attribute-name"&gt;import&lt;/span&gt; &lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="attribute-name"&gt;area-graph&lt;/span&gt;&lt;span class="error"&gt;&amp;quot;&lt;/span&gt; &lt;span class="attribute-name"&gt;from&lt;/span&gt; &lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="attribute-name"&gt;d3&lt;/span&gt;&lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We may also add a syntax for making all helpers in a package available:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{&lt;/span&gt;&lt;span class="attribute-name"&gt;import&lt;/span&gt; &lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="attribute-name"&gt;d3&lt;/span&gt;&lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;h3 class='anchorable-toc' id='toc_template-versioning-compilation'&gt;Template Versioning/Compilation&lt;/h3&gt;
+&lt;p&gt;Handlebars compiles templates down into an intermediate AST. This AST
+can change between Handlebars versions. Additionally, Handlebars syntax
+may be extended, or change in version 2.0. &lt;/p&gt;
+
+&lt;p&gt;Given that components are distributed on bower, should they be shipped
+with their templates pre-compiled, or should we leave it up to ember-cli
+to compile them on-demand?&lt;/p&gt;
+
+&lt;p&gt;Currently, we are leaning towards shipping templates in their raw source
+form, but we need to do some more investigation.&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_scoped-css'&gt;Scoped CSS&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;style scoped&amp;gt;&lt;/code&gt; is not available today in many browsers. Distributed
+components will get a uuid associated with them, and all of their CSS
+rules will be wrapped in a selector that limits them to elements with
+that uuid as a class name.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_item-controller'&gt;Item Controller&lt;/h2&gt;
+&lt;p&gt;Instead of doing &lt;code&gt;{{#each itemController=&amp;quot;postItem&amp;quot;}}&lt;/code&gt;, you can just
+define &lt;code&gt;App.PostsItemController&lt;/code&gt; (or the &lt;code&gt;app/controllers/posts-item&lt;/code&gt;
+module) and it will be wired up automatically.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_htmlbars'&gt;HTMLBars&lt;/h2&gt;
+&lt;p&gt;HTMLBars is on track and will hopefully be available behind a feature
+flag sometime in the new year. Yehuda spent some time going over the
+implementation with Kris Selden and Alex Matchneer. They are going to be
+taking over the effort of integrating the HTMLBars compiler into Ember
+proper.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re not familiar with HTMLBars, it is a compiler that knows about
+both HTML5 and Handlebars syntax. This is important for two reasons.&lt;/p&gt;
+
+&lt;p&gt;First, it will allow us to deprecate the &lt;code&gt;{{bind-attr}}&lt;/code&gt; Handlebars
+helper. Instead of this:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="tag"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{&lt;/span&gt;&lt;span class="attribute-name"&gt;bind-attr&lt;/span&gt; &lt;span class="attribute-name"&gt;src&lt;/span&gt;=&lt;span class="attribute-value"&gt;imageUrl&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;&lt;span class="tag"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You will be able to say:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="tag"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="attribute-name"&gt;src&lt;/span&gt;=&lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{&lt;/span&gt;&lt;span class="attribute-name"&gt;imageUrl&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;&lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="tag"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Second, it will also allow us to eliminate the ugly metamorph.js script
+tags that we currently use to track bound values in the DOM.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s what the DOM looks like before HTMLBars:&lt;/p&gt;
+
+&lt;p&gt;&lt;img
+src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/with-metamorph.png"&gt;&lt;/p&gt;
+
+&lt;p&gt;And after:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/without-metamorph.png"&gt;&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_eliminate-jquery-dependency'&gt;Eliminate jQuery Dependency&lt;/h2&gt;
+&lt;p&gt;Once we move over to HTMLBars, the interaction between Ember.js and the
+DOM gets smaller. We can probably treat jQuery as an optional dependency
+and only use it if it is available via globals or as an AMD module. We
+just want to make sure that we remove components/views using jQuery if its
+available so that jQuery UI widgets that have stored data in the DOM via
+jQuery.data() get cleaned up appropriately.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_animation'&gt;Animation&lt;/h2&gt;
+&lt;p&gt;We&amp;#39;re still working on having animation support be built in to the
+framework, but we don&amp;#39;t have any specific API proposals to share at this
+time. As always, we prioritize getting the API correct the first time
+rather than having to re-do it in a later release.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_ie8-support'&gt;IE8 Support&lt;/h2&gt;
+&lt;p&gt;Despite the imminent End of Life status of Windows XP, we will continue
+supporting Internet Explorer 8. We know many Ember.js users still need
+to target enterprise and education customers, who will be on IE8 for
+some time.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_emberconf'&gt;EmberConf&lt;/h2&gt;
+&lt;p&gt;EmberConf 2014: It&amp;#39;s happening. We&amp;#39;ll have more details available very
+soon, but I will say that you should keep March as free as you can.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_emberdart'&gt;EmberDart&lt;/h2&gt;
+&lt;p&gt;Just kidding.&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_how-you-can-help'&gt;How You Can Help&lt;/h2&gt;
+&lt;p&gt;As we&amp;#39;ve said before, Ember is a completely community-driven project.
+I&amp;#39;d like to thank all of the core team members who pay out-of-pocket for
+travel and accommodation so they can be at these meetings.&lt;/p&gt;
+
+&lt;p&gt;It has been extremely rewarding to watch the Ember community grow, and
+also to see it assume a position of leadership in the JavaScript
+community.&lt;/p&gt;
+
+&lt;p&gt;We need your help to keep pushing the boundaries of what&amp;#39;s possible in
+the browser. If you&amp;#39;d like to get started helping out, please join us in
+&lt;code&gt;#emberjs-dev&lt;/code&gt; on Freenode, where our helpful community can point you in
+the right direction. (If you just need help with developing your Ember
+app, please keep those questions in &lt;code&gt;#emberjs&lt;/code&gt;.)&lt;/p&gt;
+
+&lt;p&gt;If there&amp;#39;s anything we&amp;#39;ve forgotten to mention here, please feel free to
+let us know what you&amp;#39;d like to see in the comments below!&lt;/p&gt;
+&lt;h2 class='anchorable-toc' id='toc_ember-data'&gt;Ember Data&lt;/h2&gt;
+&lt;p&gt;We&amp;#39;ve got lots of exciting stuff coming in Ember Data. Expect an update
+on our roadmap there in a separate blog post soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/1.jpg"&gt;
+&lt;img src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/2.jpg"&gt;
+&lt;img src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/3.jpg"&gt;
+&lt;img src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/4.jpg"&gt;
+&lt;img src="/images/blog/2013-12-17-whats-coming-in-ember-in-2014/5.jpg"&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Core Team Meeting Minutes - 2013/12/06</title>
+    <link rel="alternate" href="http://emberjs.com/blog/2013/12/07/core-team-meeting-minutes-2013-12-06.html"/>
+    <id>http://emberjs.com/blog/2013/12/07/core-team-meeting-minutes-2013-12-06.html</id>
+    <published>2013-12-07T00:00:00Z</published>
+    <updated>2013-12-07T00:00:00Z</updated>
+    <author>
+      <name>Ember</name>
+    </author>
+    <summary type="html">&lt;p&gt;Although most of our collaboration takes place on Github, IRC 
+(&lt;code&gt;#emberjs&lt;/code&gt; on freenode.net), and our &lt;a href="http://discuss.emberjs.com/"&gt;Discourse site&lt;/a&gt;
+the &lt;a href="/team"&gt;Ember.js Core Team&lt;/a&gt; meets privately every 
+Friday at 2pm EST/11am PST through Google Hangout for a weekly 
+discussion of all things...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Although most of our collaboration takes place on Github, IRC 
+(&lt;code&gt;#emberjs&lt;/code&gt; on freenode.net), and our &lt;a href="http://discuss.emberjs.com/"&gt;Discourse site&lt;/a&gt;
+the &lt;a href="/team"&gt;Ember.js Core Team&lt;/a&gt; meets privately every 
+Friday at 2pm EST/11am PST through Google Hangout for a weekly 
+discussion of all things Ember.&lt;/p&gt;
+
+&lt;p&gt;We want to ensure that our process and thinking is totally transparent
+to the Ember.js community so we&amp;#39;re going to start publishing meeting
+notes here.&lt;/p&gt;
+
+&lt;p&gt;If you have a topic you&amp;#39;d like to see covered, contact your favorite
+core team member and let them know!&lt;/p&gt;
+&lt;h4 class='anchorable-toc' id='toc_attendees'&gt;Attendees&lt;/h4&gt;
+&lt;p&gt;@ebryn, @krisselden, @machty, @stefanpenner, @tomdale, @trek, @wagenet, @wycats&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_topics'&gt;Topics&lt;/h3&gt;&lt;h4 class='anchorable-toc' id='toc_transparency'&gt;Transparency&lt;/h4&gt;
+&lt;p&gt;We&amp;#39;ve heard a few comments that people would like greater Core Team transparency.
+Since the weekly meetings are the only significant group communication that isn&amp;#39;t
+public, we&amp;#39;ll be posting notes from these meetings.&lt;/p&gt;
+
+&lt;p&gt;Resolutions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@trek publish core team meeting notes&lt;/li&gt;
+&lt;li&gt;@trek post weekly reminders that the core team meeting occurs and invite people
+to contact individual core team members if they have issued they’d like raised.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 class='anchorable-toc' id='toc_htmlbars'&gt;HTMLBars&lt;/h4&gt;
+&lt;p&gt;@wycats says it’s ready to hand off to someone else. &lt;/p&gt;
+
+&lt;p&gt;Resolutions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@krisselden will come a bit early to the face to face to get mind-dumped. @machty
+is already familiar with writing Handlebars runtime compatible template languages
+from his work on &lt;a href="http://emblemjs.com/"&gt;Emblem.js&lt;/a&gt; so can also help get this
+over the last few hurdles.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ember 1.2.0 and 1.3 Beta Released</title>
+    <link rel="alternate" href="http://emberjs.com/blog/2013/12/04/ember-1-2-0-and-ember-1-3-0-beta-released.html"/>
+    <id>http://emberjs.com/blog/2013/12/04/ember-1-2-0-and-ember-1-3-0-beta-released.html</id>
+    <published>2013-12-04T00:00:00Z</published>
+    <updated>2013-12-04T00:00:00Z</updated>
+    <author>
+      <name>Ember</name>
+    </author>
+    <summary type="html">&lt;p&gt;What better way to celebrate the holiday season than with two
+brand-spankin' new releases of Ember.js?&lt;/p&gt;
+
+&lt;p&gt;Hot off the presses, we've got 1.2.0 and 1.3.0 beta on deck just for
+you. Since we started following a &lt;a href="/blog/2013/09/06/new-ember-release-process.html"&gt;Chrome-like release
+cycle&lt;/a&gt;, we'll have two...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;What better way to celebrate the holiday season than with two
+brand-spankin&amp;#39; new releases of Ember.js?&lt;/p&gt;
+
+&lt;p&gt;Hot off the presses, we&amp;#39;ve got 1.2.0 and 1.3.0 beta on deck just for
+you. Since we started following a &lt;a href="/blog/2013/09/06/new-ember-release-process.html"&gt;Chrome-like release
+cycle&lt;/a&gt;, we&amp;#39;ll have two
+new releases for you every six weeks. 1.2.0 is the newest stable
+release; 1.3.0 beta is the latest beta channel release.&lt;/p&gt;
+
+&lt;p&gt;Beta releases are intended to get more eyeballs on new
+features that look ready to go, but may have bugs or edge cases that we
+haven&amp;#39;t yet sussed out.&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_new-in-1-2'&gt;New in 1.2&lt;/h3&gt;&lt;h4 class='anchorable-toc' id='toc_loading-and-error-substates'&gt;Loading and Error Substates&lt;/h4&gt;
+&lt;p&gt;While we&amp;#39;d all like to write apps that are fast and bullet-proof,
+sometimes your backend may be slow to respond, or generate an error,
+when your Ember app requests a model.&lt;/p&gt;
+
+&lt;p&gt;Dealing with those cases is much easier in Ember.js 1.2, thanks to
+conventional loading and error routes.&lt;/p&gt;
+
+&lt;p&gt;To learn how to set these up, see &lt;a href="/guides/routing/loading-and-error-substates/"&gt;Loading and Error
+Substates&lt;/a&gt; section of the
+guides.&lt;/p&gt;
+&lt;h4 class='anchorable-toc' id='toc_non-block-form-link-to-helper'&gt;Non-block form {{link-to}} helper&lt;/h4&gt;
+&lt;p&gt;Previously, the &lt;code&gt;{{link-to}}&lt;/code&gt; helper required that you use it in block
+form:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{#&lt;/span&gt;&lt;span class="attribute-name"&gt;link-to&lt;/span&gt; &lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="attribute-name"&gt;about&lt;/span&gt;&lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;About Us&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{/&lt;/span&gt;&lt;span class="attribute-name"&gt;link-to&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ember 1.2 introduces a non-block form that is less verbose:&lt;/p&gt;
+&lt;div class="highlight handlebars "&gt;&lt;div class="ribbon"&gt;&lt;/div&gt;&lt;div class="scroller"&gt;&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td class="line-numbers"&gt;&lt;pre&gt;1
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="inline"&gt;&lt;span class="inline-delimiter"&gt;{{&lt;/span&gt;&lt;span class="attribute-name"&gt;link-to&lt;/span&gt; &lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="attribute-name"&gt;About&lt;/span&gt; &lt;span class="attribute-name"&gt;Us&lt;/span&gt;&lt;span class="error"&gt;&amp;quot;&lt;/span&gt; &lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="attribute-name"&gt;about&lt;/span&gt;&lt;span class="error"&gt;&amp;quot;&lt;/span&gt;&lt;span class="inline-delimiter"&gt;}}&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In the non-block form, the first argument is the text to wrap in an
+&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag, and the second argument is the route to link to.&lt;/p&gt;
+&lt;h4 class='anchorable-toc' id='toc_sortby'&gt;sortBy&lt;/h4&gt;
+&lt;p&gt;All objects that implement the &lt;code&gt;Ember.Enumerable&lt;/code&gt; protocol now have a
+&lt;code&gt;sortBy&lt;/code&gt; method that sorts the enumerable based on a property of each
+of the members.&lt;/p&gt;
+
+&lt;p&gt;For an example, see &lt;a href="http://emberjs.jsbin.com/OFozANOz/1/"&gt;this JSBin&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 class='anchorable-toc' id='toc_other-improvements'&gt;Other Improvements&lt;/h4&gt;
+&lt;p&gt;As usual, there are a ton of bug fixes and small improvements in this
+release. You can see a list of all the changes in the CHANGELOG:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/emberjs/ember.js/blob/v1.2.0/CHANGELOG"&gt;Ember.js 1.2.0 CHANGELOG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/emberjs/ember.js/blob/v1.3.0-beta.1/CHANGELOG.md"&gt;Ember.js 1.3.0 beta 1 CHANGELOG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A very big thank you to everyone who contributed, and a
+special thank you to our release team that have collectively poured
+hours of their free time into automating the infrastructure around the
+release process.&lt;/p&gt;
+
+&lt;p&gt;As usual, you can always find the latest stable, beta, and canary
+releases at &lt;a href="http://emberjs.com/builds"&gt;emberjs.com/builds&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;While you&amp;#39;re there, check out the new illustrations, courtesy of &lt;a href="https://twitter.com/wifelette"&gt;Leah
+Silber&lt;/a&gt; and &lt;a href="http://designcarnivore.com/"&gt;Design
+Carnivore&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ember 1.1.2 Released</title>
+    <link rel="alternate" href="http://emberjs.com/blog/2013/10/25/ember-1-1-2-released.html"/>
+    <id>http://emberjs.com/blog/2013/10/25/ember-1-1-2-released.html</id>
+    <published>2013-10-25T00:00:00Z</published>
+    <updated>2013-10-25T00:00:00Z</updated>
+    <author>
+      <name>Ember</name>
+    </author>
+    <summary type="html">&lt;p&gt;Unfortunately, there was a second regression in 1.1 that didn't get
+caught in time to make it into 1.1.1. On that account 1.1.2 is out now
+to correct that issue. For more information about the problem see
+&lt;a href="https://github.com/emberjs/ember.js/issues/3637"&gt;Issue #3637&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We recommend that everyone using...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Unfortunately, there was a second regression in 1.1 that didn&amp;#39;t get
+caught in time to make it into 1.1.1. On that account 1.1.2 is out now
+to correct that issue. For more information about the problem see
+&lt;a href="https://github.com/emberjs/ember.js/issues/3637"&gt;Issue #3637&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We recommend that everyone using 1.1.0 and 1.1.1 upgrade at their
+nearest convenience. Head on over to &lt;a href="/builds"&gt;emberjs.com/builds&lt;/a&gt;
+to download. Our apologies for the inconvenience.&lt;/p&gt;
+&lt;h3 class='anchorable-toc' id='toc_ember-1-2-beta-2'&gt;Ember 1.2 Beta 2&lt;/h3&gt;
+&lt;p&gt;While we were at it, we also released the second 1.2 beta which includes
+a couple of bug fixes. 1.2.0-beta.2 is also available at
+&lt;a href="/builds"&gt;emberjs.com/builds&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ember 1.1.1 and 1.2 Beta Released</title>
+    <link rel="alternate" href="http://emberjs.com/blog/2013/10/24/ember-1-1-1-and-ember-1-2-0-beta-released.html"/>
+    <id>http://emberjs.com/blog/2013/10/24/ember-1-1-1-and-ember-1-2-0-beta-released.html</id>
+    <published>2013-10-24T00:00:00Z</published>
+    <updated>2013-10-24T00:00:00Z</updated>
+    <author>
+      <name>Ember</name>
+    </author>
+    <summary type="html">&lt;p&gt;Hot off the heels of our 1.0 release, we've got two new bundles of
+goodness for you to try out today.&lt;/p&gt;
+
+&lt;p&gt;First up is Ember.js 1.1.1, the inaugural stable release after our
+&lt;a href="/blog/2013/09/06/new-ember-release-process.html"&gt;switch to a Chrome-like six week release
+cycle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because this is the kickoff release...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Hot off the heels of our 1.0 release, we&amp;#39;ve got two new bundles of
+goodness for you to try out today.&lt;/p&gt;
+
+&lt;p&gt;First up is Ember.js 1.1.1, the inaugural stable release after our
+&lt;a href="/blog/2013/09/06/new-ember-release-process.html"&gt;switch to a Chrome-like six week release
+cycle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because this is the kickoff release of the new process, there are very
+few new features and the delta between 1.0 and 1.1.1 is very small. This
+release is composed primarily of bug fixes and performance improvements,
+so we recommend you upgrade right away.&lt;/p&gt;
+
+&lt;p&gt;For a list of exactly what&amp;#39;s new, see the &lt;a href="https://github.com/emberjs/ember.js/blob/v1.1.1/CHANGELOG"&gt;CHANGELOG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;(If you&amp;#39;re wondering why 1.1.1 and not 1.1, there was &lt;a href="https://github.com/emberjs/ember.js/issues/3596"&gt;a regression
+introduced in Ember.Object.create() that could break 1.0-compatible
+apps&lt;/a&gt; that we didn&amp;#39;t
+notice until after we&amp;#39;d tagged the 1.1 release.)&lt;/p&gt;
+
+&lt;p&gt;To coincide with the stable release, we&amp;#39;ve also got a new beta release
+of Ember 1.2. Beta releases are intended to get more eyeballs on new
+features that look ready to go, but may have bugs or edge cases that we
+haven&amp;#39;t yet sussed out.&lt;/p&gt;
+
+&lt;p&gt;The only changes between a beta release and the stable version should be
+bug fixes and removing features that originally looked ready but didn&amp;#39;t
+end up making the cut.&lt;/p&gt;
+
+&lt;p&gt;For a full list of the new features in Ember 1.2 beta, see the &lt;a href="https://github.com/emberjs/ember.js/blob/v1.2.0-beta.1/CHANGELOG"&gt;CHANGELOG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As always, Ember 1.1 and 1.2 beta are available at
+&lt;a href="/builds"&gt;emberjs.com/builds&lt;/a&gt;. If you&amp;#39;re feeling particularly
+adventurous, you can also grab a Canary build to see what we&amp;#39;re in the
+middle of working on, though do note that all new APIs in Canary are
+subject to change. To see what features are available to be enabled, see
+&lt;a href="https://github.com/emberjs/ember.js/blob/master/FEATURES.md"&gt;FEATURES.md&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;re excited about kicking off the new release process because we think
+that it will allow us to deliver a higher-quality product more
+frequently. We also believe that using feature flags in our Canary
+builds will allow us to more easily experiment with new APIs, which
+translates to more features faster.&lt;/p&gt;
+
+&lt;p&gt;As always, if you find bugs or need help, please &lt;a href="https://github.com/emberjs/ember.js/issues"&gt;file an issue on
+GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lastly, my sincere thanks to everyone who has contributed features, bug
+reports and bug fixes to this release.&lt;/p&gt;
+
+&lt;p&gt;In particular, I&amp;#39;d like to call out &lt;a href="https://twitter.com/rwjblue"&gt;Robert Jackson
+(@rwjblue)&lt;/a&gt; and &lt;a href="https://twitter.com/thomasABoyt"&gt;Thomas Boyt
+(@thomasABoyt)&lt;/a&gt; for their superheroic
+efforts on the infrastructure required to make this type of release
+process work smoothly.&lt;/p&gt;
+
+&lt;p&gt;Early on, Yehuda and I made a bet that investing in making Ember.js a
+community project would pay dividends. We&amp;#39;ve sometimes questioned that
+decision when going up against better-funded competitors, but this
+release, I think, vindicates our decision.&lt;/p&gt;
+
+&lt;p&gt;This is &lt;a href="https://github.com/emberjs/ember.js/pulse/monthly"&gt;a truly community-driven release&lt;/a&gt;, and both Yehuda and I were
+hands-off through most of it. I am deeply grateful to everyone who
+sacrificed hours of their nights and weekends to help us build something
+that matters.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;d like to be a part of it, we have a welcoming and helpful
+community, and we&amp;#39;d love to have you join. Come see us in #emberjs on
+Freenode to ask questions and get involved.&lt;/p&gt;
+
+&lt;p&gt;Enjoy the new releases, and go forth and build great things!&lt;/p&gt;
+</content>
+  </entry>
+</feed>

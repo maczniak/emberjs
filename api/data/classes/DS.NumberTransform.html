@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ember.js - DS.NumberTransform</title>
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <!--[if lte IE 7 ]><link href="/stylesheets/fonts/fontello-ie7.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <link href="/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/highlight.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://emberjs.com/blog/feed.xml" rel="alternate" type="application/atom+xml" title="Ember.js - Blog" />
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+      _gaq.push(['_setAccount', 'UA-27675533-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="/javascripts/common-old-ie.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="/javascripts/common-modern.js"></script>
+<!--<![endif]-->
+
+    
+    <script type="text/javascript" src="/javascripts/api.js"></script>
+  
+  </head>
+
+  <body class="api api_data api_data_classes api_data_classes_DS">
+    <div id="header">
+      <div id="wrapper">
+        <a id="logo" href="/">&nbsp;</a>
+        <ul id="nav">
+          <li><a href="/about">about</a></li>
+          <li><a href="/guides">guides</a></li>
+          <li class="active"><a href="/api">api</a></li>
+          <li><a href="/community">community</a></li>
+          <li><a href="/blog">blog</a></li>
+          <li><a href="/builds">builds</a></li>
+          <li id="search">
+            <form>
+              <input type="text" id="st-search-input" class="st-search-input" />
+            </form>
+            <div id="st-results-container"></div>
+          </li>
+        </ul>
+
+        <div id="github">
+          <a href="https://github.com/emberjs/ember.js"><i class="icon-fork"></i>Fork Us!</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      
+      
+        <div id="sidebar">
+          
+    <ol id='toc-list'>
+      <li class='level-1'>
+        <a href="#">Projects</a>
+        <ol>
+          
+          <li class='level-3 '>
+            <a href="/api">Ember</a>
+          </li>
+          
+          <li class='level-3 sub-selected'>
+            <a href="/api/data">Ember Data</a>
+          </li>
+          
+        </ol>
+      </li>
+
+      <li class='level-1'><a href="https://github.com/emberjs/data/commits/v1.0.0-beta.4" target="_blank"> Tag: v1.0.0-beta.4</a></li>
+
+      
+          <li class="level-1 ">
+          
+        <a href='#'>Modules</a>
+        
+          <ol class="">
+          
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/modules/ember-data.html">ember-data</a>
+            
+          </li>
+        
+          
+        
+          </ol>
+        
+      
+          </li>
+        
+
+      
+          <li class="level-1 ">
+          
+        <a href='#'>Namespaces</a>
+        
+          <ol class="">
+          
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.html">DS</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/Ember.Date.html">Ember.Date</a>
+            
+          </li>
+        
+          
+        
+          </ol>
+        
+      
+          </li>
+        
+
+      
+          <li class="level-1 selected">
+          
+        <a href='#'>Classes</a>
+        
+          <ol class="selected">
+          
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.ActiveModelAdapter.html">DS.ActiveModelAdapter</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.Adapter.html">DS.Adapter</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.AdapterPopulatedRecordArray.html">DS.AdapterPopulatedRecordArray</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.AttributeChange.html">DS.AttributeChange</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.BooleanTransform.html">DS.BooleanTransform</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.DateTransform.html">DS.DateTransform</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.DebugAdapter.html">DS.DebugAdapter</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.EmbeddedRecordsMixin.html">DS.EmbeddedRecordsMixin</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.FilteredRecordArray.html">DS.FilteredRecordArray</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.FixtureAdapter.html">DS.FixtureAdapter</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.JSONSerializer.html">DS.JSONSerializer</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.ManyArray.html">DS.ManyArray</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.Model.html">DS.Model</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 sub-selected">
+          
+              <a href="/api/data/classes/DS.NumberTransform.html">DS.NumberTransform</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RESTAdapter.html">DS.RESTAdapter</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RESTSerializer.html">DS.RESTSerializer</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RecordArray.html">DS.RecordArray</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RecordArrayManager.html">DS.RecordArrayManager</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RelationshipChange.html">DS.RelationshipChange</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RelationshipChangeAdd.html">DS.RelationshipChangeAdd</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RelationshipChangeRemove.html">DS.RelationshipChangeRemove</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.RootState.html">DS.RootState</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.Store.html">DS.Store</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.StringTransform.html">DS.StringTransform</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/DS.Transform.html">DS.Transform</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/Ember.Inflector.html">Ember.Inflector</a>
+            
+          </li>
+        
+          
+            
+          <li class="level-3 ">
+          
+              <a href="/api/data/classes/String.html">String</a>
+            
+          </li>
+        
+          
+        
+          </ol>
+        
+      
+          </li>
+        
+  
+          <div id="back-to-top"><a id="back-top-top" href="#">&#11014; Back to Top</a></div>
+        </div>
+      
+      <div id="content" class="has-sidebar">
+          
+
+  
+  <h1 class="api-header">
+  DS.NumberTransform Class
+  
+    <a class="edit-page" target="_blank" href="https://github.com/emberjs/data/tree/v1.0.0-beta.4/packages/ember-data/lib/transforms/number.js#L2">packages/ember-data/lib/transforms/number.js:2</a>
+  
+</h1>
+
+<hr>
+
+
+<div class="class-info">
+  
+    <p>Extends: <a href="/api/data/classes/DS.Transform.html">DS.Transform</a></p>
+  
+
+  
+
+  
+    <p>Defined in: <a class="api-file-link" href="https://github.com/emberjs/data/tree/v1.0.0-beta.4/packages/ember-data/lib/transforms/number.js#L2">packages/ember-data/lib/transforms/number.js:2</a></p>
+  
+
+  
+    <p>Module: <a href="/api/data/modules/ember-data.html">ember-data</a></p>
+  
+</div>
+
+  <div class="description">
+    <p>The <code>DS.NumberTransform</code> class is used to serialize and deserialize
+numeric attributes on Ember Data record objects. This transform is
+used when <code>number</code> is passed as the type parameter to the
+<a href="../../data#method_attr">DS.attr</a> function.</p>
+
+<p>Usage</p>
+<div class="highlight javascript "><div class="ribbon"></div><div class="scroller"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+</pre></td>
+  <td class="code"><pre><span class="keyword">var</span> attr = DS.attr;
+App.Score = DS.Model.extend({
+  <span class="key">value</span>: attr(<span class="string"><span class="delimiter">'</span><span class="content">number</span><span class="delimiter">'</span></span>),
+  <span class="key">player</span>: DS.belongsTo(<span class="string"><span class="delimiter">'</span><span class="content">player</span><span class="delimiter">'</span></span>),
+  <span class="key">date</span>: attr(<span class="string"><span class="delimiter">'</span><span class="content">date</span><span class="delimiter">'</span></span>)
+});
+</pre></td>
+</tr></table>
+</div></div>
+  </div>
+
+
+  <div class="tabs">
+    <ul>
+      <li><a href="#index">Index</a></li>
+      
+        <li><a href="#methods">Methods</a></li>
+      
+    </ul>
+    <div class="pane" id="index">
+      <div id='api-options'>
+  Show:
+  <label>
+    <input type='checkbox' data-type='inherited' checked>
+    Inherited
+  </label>
+  <label>
+    <input type='checkbox' data-type='protected'>
+    Protected
+  </label>
+  <label>
+    <input type='checkbox' data-type='private'>
+    Private
+  </label>
+  <label>
+    <input type='checkbox' data-type='deprecated'>
+    Deprecated
+  </label>
+</div>
+
+      
+        <p><h2>Methods</h2></p>
+        <ul class="index-list">
+          
+            <li class="method inherited">
+              <a href="#method_deserialized">deserialized</a>
+            </li>
+          
+            <li class="method inherited">
+              <a href="#method_serialize">serialize</a>
+            </li>
+          
+        </ul>
+      
+    </div>
+  
+    <div class="pane" id="methods">
+      <div id='api-options'>
+  Show:
+  <label>
+    <input type='checkbox' data-type='inherited' checked>
+    Inherited
+  </label>
+  <label>
+    <input type='checkbox' data-type='protected'>
+    Protected
+  </label>
+  <label>
+    <input type='checkbox' data-type='private'>
+    Private
+  </label>
+  <label>
+    <input type='checkbox' data-type='deprecated'>
+    Deprecated
+  </label>
+</div>
+
+      
+        
+<div id="method_deserialized" class="method inherited item-entry">
+  <h3 data-id="method_deserialized" class="name anchorable-toc"><code>deserialized</code></h3>
+  <span class="args">
+    (serialized)
+  </span>
+
+  <span class="type"></span>
+
+
+
+
+
+
+
+
+  <div class="meta">
+      
+        
+          Inherited from
+          <a href="/api/data/classes/DS.Transform.html#method_deserialized">DS.Transform</a>
+        
+      
+      <a class="api-file-link" href="https://github.com/emberjs/data/tree/v1.0.0-beta.4/packages/ember-data/lib/transforms/base.js#L53">packages/ember-data/lib/transforms/base.js:53</a>
+
+    
+
+    
+  </div>
+
+  
+    <div class="description">
+      <p>When given a serialize value from a JSON object this method must
+return the deserialized value for the record attribute.</p>
+
+<p>Example</p>
+<div class="highlight javascript "><div class="ribbon"></div><div class="scroller"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="function">deserialize</span>: <span class="keyword">function</span>(serialized) {
+  <span class="keyword">return</span> empty(serialized) ? <span class="predefined-constant">null</span> : Number(serialized);
+}
+</pre></td>
+</tr></table>
+</div></div>
+    </div>
+  
+
+  <p>
+    
+  </p>
+
+  
+
+  
+    <div class="params">
+      <h3>Parameters:</h3>
+
+      <dl>
+        
+          <dt><strong>serialized</strong> <span class="type"></span></dt>
+          <dd>The serialized value</dd>
+        
+      </dl>
+    </div>
+  
+
+  
+    <div class="return">
+      <h3>Returns:</h3>
+      <dl>
+        <dt><span class="type"></span>
+        <dd> The deserialized value</dd>
+      </dl>
+    </div>
+  
+</div>
+
+      
+        
+<div id="method_serialize" class="method inherited item-entry">
+  <h3 data-id="method_serialize" class="name anchorable-toc"><code>serialize</code></h3>
+  <span class="args">
+    (deserialized)
+  </span>
+
+  <span class="type"></span>
+
+
+
+
+
+
+
+
+  <div class="meta">
+      
+        
+          Inherited from
+          <a href="/api/data/classes/DS.Transform.html#method_serialize">DS.Transform</a>
+        
+      
+      <a class="api-file-link" href="https://github.com/emberjs/data/tree/v1.0.0-beta.4/packages/ember-data/lib/transforms/base.js#L35">packages/ember-data/lib/transforms/base.js:35</a>
+
+    
+
+    
+  </div>
+
+  
+    <div class="description">
+      <p>When given a deserialized value from a record attribute this
+method must return the serialized value.</p>
+
+<p>Example</p>
+<div class="highlight javascript "><div class="ribbon"></div><div class="scroller"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="function">serialize</span>: <span class="keyword">function</span>(deserialized) {
+  <span class="keyword">return</span> Ember.isEmpty(deserialized) ? <span class="predefined-constant">null</span> : Number(deserialized);
+}
+</pre></td>
+</tr></table>
+</div></div>
+    </div>
+  
+
+  <p>
+    
+  </p>
+
+  
+
+  
+    <div class="params">
+      <h3>Parameters:</h3>
+
+      <dl>
+        
+          <dt><strong>deserialized</strong> <span class="type"></span></dt>
+          <dd>The deserialized value</dd>
+        
+      </dl>
+    </div>
+  
+
+  
+    <div class="return">
+      <h3>Returns:</h3>
+      <dl>
+        <dt><span class="type"></span>
+        <dd> The serialized value</dd>
+      </dl>
+    </div>
+  
+</div>
+
+      
+    </div>
+  
+  </div>
+
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="footer-wrapper">
+        <div class="info">
+          Copyright 2014 <a href="http://tilde.io">Tilde Inc.</a><br>
+          Design by <a href="http://www.heropixel.com">HeroPixel</a></br>
+          <a href="/team">Core Team</a> | <a href="/sponsors">Project Sponsors</a>
+        </div>
+        <div class="statement">Ember.js is free, open source and always will be.</div>
+        <div class="links">
+          <a class="twitter" href="http://twitter.com/emberjs">
+            <i class="icon-twitter"></i><span>Twitter</span>
+          </a>
+          <a class="github" href="https://github.com/emberjs/ember.js">
+            <i class="icon-github"></i><span>GitHub</span>
+          </a>
+          <a class="googleplus" href="https://plus.google.com/communities/106387049790387471205">
+            <i class="icon-gplus"></i><span>Google+</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
