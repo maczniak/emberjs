@@ -3,10 +3,10 @@
     url: "index.html"
     skip_sidebar: true
 
-"Getting Started":
-  - title: "Getting Started"
+"시작하기":
+  - title: "시작하기"
     url: "getting-started"
-  - title: "Planning The Application"
+  - title: "어플리케이션 구상"
     url: "getting-started/planning-the-application"
   - title: "Creating a Static Mockup"
     url: "getting-started/creating-a-static-mockup"
